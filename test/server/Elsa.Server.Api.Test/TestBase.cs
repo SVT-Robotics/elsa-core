@@ -7,7 +7,6 @@ using Elsa.Server.Api.Endpoints.WorkflowDefinitions;
 using Elsa.Server.Api.Test.Mock;
 using Moq;
 using Elsa.Models;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Elsa.Server.Api.Test
 {
@@ -62,10 +61,8 @@ namespace Elsa.Server.Api.Test
         /// <returns></returns>
         private void SetupMapper()
         {
-            var services = new ServiceCollection();
-            services.AddAutoMapper(cfg => cfg.AddProfile<AutoMapperProfile>());
-            var provider = services.BuildServiceProvider();
-            Mapper = provider.GetRequiredService<IMapper>();
+            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
+            Mapper = config.CreateMapper();
         }
 
     }
