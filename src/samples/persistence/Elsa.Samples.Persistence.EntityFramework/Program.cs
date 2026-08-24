@@ -5,7 +5,7 @@ using Elsa.Persistence.EntityFramework.Core.Extensions;
 using Elsa.Persistence.Specifications.WorkflowInstances;
 using Elsa.Services;
 using Microsoft.Extensions.DependencyInjection;
-using Elsa.Persistence.EntityFramework.SqlServer;
+using Elsa.Persistence.EntityFramework.PostgreSql;
 
 namespace Elsa.Samples.Persistence.EntityFramework
 {
@@ -21,11 +21,11 @@ namespace Elsa.Samples.Persistence.EntityFramework
                     {
                         //ef.UseSqlite();
                         
-                        //ef.UsePostgreSql("Server=127.0.0.1;Port=5432;Database=elsa;User Id=postgres;Password=password;");
+                        ef.UsePostgreSql("Server=127.0.0.1;Port=5432;Database=elsa;User Id=postgres;Password=password;");
 
                         //ef.UseMySql("Server=localhost;Port=3306;Database=elsa;User=root;Password=password;");
 
-                        ef.UseSqlServer("Server=localhost;Database=Elsa;Integrated Security=true");
+                        //ef.UseSqlServer("Server=localhost;Database=Elsa;Integrated Security=true");
                     })
                     .AddConsoleActivities()
                     .AddWorkflow<HelloWorld>())

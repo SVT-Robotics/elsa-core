@@ -16,6 +16,7 @@
             * TempFile
         </Description>
         <PackageTags>elsa, workflows</PackageTags>
+        <PackageId>SVT.Elsa.Activities.File</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

@@ -11,6 +11,7 @@
             This package provides integration with ASP.NET authentication.
         </Description>
         <PackageTags>elsa, workflows, asp.net, authentication, jwt, security, identity</PackageTags>
+        <PackageId>SVT.Elsa.Server.Authentication</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

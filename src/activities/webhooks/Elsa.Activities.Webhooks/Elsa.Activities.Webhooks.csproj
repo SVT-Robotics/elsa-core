@@ -10,6 +10,7 @@
             This package provides Webhook activities.
         </Description>
         <PackageTags>elsa, workflows, webhooks</PackageTags>
+        <PackageId>SVT.Elsa.Activities.Webhooks</PackageId>
     </PropertyGroup>
     
     <ItemGroup>

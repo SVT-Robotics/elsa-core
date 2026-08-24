@@ -10,6 +10,7 @@
             This package provides the MySql EF Core provider for Webhook persistence.
         </Description>
         <PackageTags>elsa, workflows, webhooks, efcore, mysql</PackageTags>
+        <PackageId>SVT.Elsa.Webhooks.Persistence.EntityFramework.MySql</PackageId>
     </PropertyGroup>
     
     <ItemGroup Condition=" '$(TargetFramework)' == 'net5.0'">
@@ -42,10 +43,6 @@
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.0-beta.2" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\Elsa.Webhooks.Persistence.EntityFramework.Core\Elsa.Webhooks.Persistence.EntityFramework.Core.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Elsa.Persistence.EntityFramework.Sqlite.Migrations
 {
@@ -8,7 +8,7 @@ namespace Elsa.Persistence.EntityFramework.Sqlite.Migrations
         {
             migrationBuilder.CreateTable(
                 name: "Triggers",
-                schema: "Elsa",
+                //schema: "Elsa",
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "TEXT", nullable: false),
@@ -27,43 +27,43 @@ namespace Elsa.Persistence.EntityFramework.Sqlite.Migrations
 
             migrationBuilder.CreateIndex(
                 name: "IX_Trigger_ActivityId",
-                schema: "Elsa",
+                //schema: "Elsa",
                 table: "Triggers",
                 column: "ActivityId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Trigger_ActivityType",
-                schema: "Elsa",
+                //schema: "Elsa",
                 table: "Triggers",
                 column: "ActivityType");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Trigger_ActivityType_TenantId_Hash",
-                schema: "Elsa",
+                //schema: "Elsa",
                 table: "Triggers",
                 columns: new[] { "ActivityType", "TenantId", "Hash" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Trigger_Hash",
-                schema: "Elsa",
+                //schema: "Elsa",
                 table: "Triggers",
                 column: "Hash");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Trigger_Hash_TenantId",
-                schema: "Elsa",
+                //schema: "Elsa",
                 table: "Triggers",
                 columns: new[] { "Hash", "TenantId" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Trigger_TenantId",
-                schema: "Elsa",
+                //schema: "Elsa",
                 table: "Triggers",
                 column: "TenantId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Trigger_WorkflowDefinitionId",
-                schema: "Elsa",
+                //schema: "Elsa",
                 table: "Triggers",
                 column: "WorkflowDefinitionId");
         }
@@ -71,8 +71,8 @@ namespace Elsa.Persistence.EntityFramework.Sqlite.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Triggers",
-                schema: "Elsa");
+                name: "Triggers");//,
+                //schema: "Elsa");
         }
     }
 }

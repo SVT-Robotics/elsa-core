@@ -13,6 +13,7 @@
             * WriteLine
         </Description>
         <PackageTags>elsa, workflows</PackageTags>
+        <PackageId>SVT.Elsa.Activities.Console</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

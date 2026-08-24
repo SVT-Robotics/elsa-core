@@ -10,6 +10,7 @@
             This package provides activities to send and receive messages using Azure Service Bus.
         </Description>
         <PackageTags>elsa, workflows</PackageTags>
+        <PackageId>SVT.Elsa.Activities.AzureServiceBus</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

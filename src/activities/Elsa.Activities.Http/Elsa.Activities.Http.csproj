@@ -14,6 +14,7 @@
             * WriteHttpResponse
         </Description>
         <PackageTags>elsa, workflows, http</PackageTags>
+        <PackageId>SVT.Elsa.Activities.Http</PackageId>
     </PropertyGroup>
     <ItemGroup>
         <ProjectReference Include="..\..\core\Elsa.Core\Elsa.Core.csproj" />

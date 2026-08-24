@@ -10,6 +10,7 @@
             This package provides a Liquid expression evaluator based on Fluid.
         </Description>
         <PackageTags>elsa, workflows, liquid</PackageTags>
+        <PackageId>SVT.Elsa.Scripting.Liquid</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

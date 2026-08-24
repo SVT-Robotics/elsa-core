@@ -10,6 +10,7 @@
           This package provides an SQL expression evaluator.
       </Description>
       <PackageTags>elsa, workflows, SQL</PackageTags>
+        <PackageId>SVT.Elsa.Scripting.Sql</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

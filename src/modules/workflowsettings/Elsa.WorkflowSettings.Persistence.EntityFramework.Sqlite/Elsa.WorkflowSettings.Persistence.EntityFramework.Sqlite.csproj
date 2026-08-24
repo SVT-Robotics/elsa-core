@@ -10,6 +10,7 @@
             This package provides Entity Framework Core migrations for the Sqlite database provider.
         </Description>
         <PackageTags>elsa, workflow settings, efcore</PackageTags>
+        <PackageId>SVT.Elsa.WorkflowSettings.Persistence.EntityFramework.Sqlite</PackageId>
     </PropertyGroup>
 
     <ItemGroup Condition=" '$(TargetFramework)' == 'net5.0'">

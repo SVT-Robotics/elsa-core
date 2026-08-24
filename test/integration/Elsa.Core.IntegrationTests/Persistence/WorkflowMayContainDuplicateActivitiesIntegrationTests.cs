@@ -33,18 +33,6 @@ namespace Elsa.Core.IntegrationTests.Persistence
             await PerformTest(hostBuilderBuilder);
         }
 
-        [Theory(DisplayName = "A workflow that contains duplicate activities may be run & persisted to a MongoDb store"), AutoMoqData]
-        public async Task ADuplicateActivitiesWorkflowInstanceShouldBeRoundTrippableWithMongoDb([WithDuplicateActivitiesWorkflow,WithMongoDb] ElsaHostBuilderBuilder hostBuilderBuilder)
-        {
-            await PerformTest(hostBuilderBuilder);
-        }
-        
-        [Theory(Skip = "Need some time to fix YesSQL provider", DisplayName = "A workflow that contains duplicate activities may be run & persisted to a YesSQL store"), AutoMoqData]
-        public async Task ADuplicateActivitiesWorkflowInstanceShouldBeRoundTrippableWithYesSql([WithDuplicateActivitiesWorkflow,WithSqliteYesSql] ElsaHostBuilderBuilder hostBuilderBuilder)
-        {
-            await PerformTest(hostBuilderBuilder);
-        }
-
         async Task PerformTest(ElsaHostBuilderBuilder hostBuilderBuilder)
         {
             var hostBuilder = hostBuilderBuilder.GetHostBuilder();

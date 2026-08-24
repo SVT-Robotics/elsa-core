@@ -10,6 +10,7 @@
             This package provides an Azure Service Bus provider for the Rebus service bus API used by Elsa.
         </Description>       
         <PackageTags>elsa, workflows, rebus, service bus, azure service bus</PackageTags>
+        <PackageId>SVT.Elsa.Rebus.AzureServiceBus</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

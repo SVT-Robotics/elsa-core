@@ -11,6 +11,7 @@
         </Description>
         <Copyright>2020</Copyright>
         <PackageTags>elsa, workflows, mongodb</PackageTags>
+        <PackageId>SVT.Elsa.Persistence.MongoDb</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

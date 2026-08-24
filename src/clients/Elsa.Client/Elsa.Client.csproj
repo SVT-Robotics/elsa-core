@@ -10,6 +10,7 @@
             This package provides a client using Refit for Elsa's REST API endpoints.
         </Description>
         <PackageTags>elsa, workflows, rest, api, client</PackageTags>
+        <PackageId>SVT.Elsa.Client</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

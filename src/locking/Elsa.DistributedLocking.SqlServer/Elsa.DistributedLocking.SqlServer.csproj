@@ -11,6 +11,7 @@
             This package provides a distributed locking provider using SQL Server.
         </Description>     
         <PackageTags>elsa, workflows, distributed lock, sqlserver</PackageTags>
+        <PackageId>SVT.Elsa.DistributedLocking.SqlServer</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

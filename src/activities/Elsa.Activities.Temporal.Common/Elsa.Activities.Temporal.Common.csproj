@@ -19,6 +19,7 @@
             * Elsa.Activities.Temporal.Quartz
         </Description>
         <PackageTags>elsa, workflows, timers, background tasks</PackageTags>
+        <PackageId>SVT.Elsa.Activities.Temporal.Common</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

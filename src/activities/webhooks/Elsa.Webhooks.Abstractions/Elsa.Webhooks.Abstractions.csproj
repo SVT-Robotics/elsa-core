@@ -10,6 +10,7 @@
             This package provides Webhook abstractions.
         </Description>
         <PackageTags>elsa, workflows, webhooks</PackageTags>
+        <PackageId>SVT.Elsa.Webhooks.Abstractions</PackageId>
         <RootNamespace>Elsa.Webhooks</RootNamespace>
     </PropertyGroup>
 

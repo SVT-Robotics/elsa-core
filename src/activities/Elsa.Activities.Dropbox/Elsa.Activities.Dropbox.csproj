@@ -12,6 +12,7 @@
             * SaveToDropbox
         </Description>
         <PackageTags>elsa, workflows, dropbox</PackageTags>
+        <PackageId>SVT.Elsa.Activities.Dropbox</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

@@ -15,7 +15,8 @@
             * GetText
             * CloseBrowser
         </Description>   
-        <PackageTags>elsa, workflows, rpa, web, selenium</PackageTags>       
+        <PackageTags>elsa, workflows, rpa, web, selenium</PackageTags>
+        <PackageId>SVT.Elsa.Activities.Rpa.Web</PackageId>       
     </PropertyGroup>
     
     <ItemGroup>

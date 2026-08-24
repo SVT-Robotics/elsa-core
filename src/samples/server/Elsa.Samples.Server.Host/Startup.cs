@@ -1,6 +1,5 @@
 using Elsa.Activities.Http.OpenApi;
 using Elsa.Models;
-using Elsa.Retention.Extensions;
 using Elsa.WorkflowTesting.Api.Extensions;
 using Hangfire;
 using Hangfire.SQLite;
@@ -11,7 +10,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using NodaTime;
 using NodaTime.Serialization.JsonNet;
-using Elsa.Retention.Specifications;
 
 namespace Elsa.Samples.Server.Host
 {
@@ -42,7 +40,6 @@ namespace Elsa.Samples.Server.Host
                 typeof(Elsa.Activities.Temporal.Quartz.Startup),
                 typeof(Elsa.Activities.Temporal.Hangfire.Startup),
                 typeof(Elsa.Activities.Email.Startup),
-                typeof(Elsa.Activities.Telnyx.Startup),
                 typeof(Elsa.Activities.File.Startup),
                 typeof(Elsa.Activities.RabbitMq.Startup),
                 typeof(Elsa.Activities.Sql.Startup),
@@ -51,36 +48,10 @@ namespace Elsa.Samples.Server.Host
                 typeof(Persistence.EntityFramework.SqlServer.Startup),
                 typeof(Persistence.EntityFramework.MySql.Startup),
                 typeof(Persistence.EntityFramework.PostgreSql.Startup),
-                typeof(Persistence.MongoDb.Startup),
-                typeof(Persistence.YesSql.SqliteStartup),
-                typeof(Persistence.YesSql.SqlServerStartup),
-                typeof(Persistence.YesSql.MySqlStartup),
-                typeof(Persistence.YesSql.PostgreSqlStartup),
                 typeof(Elsa.Server.Hangfire.Startup),
                 typeof(Elsa.Scripting.JavaScript.Startup),
-                typeof(Elsa.Activities.Webhooks.Startup),
-                typeof(Webhooks.Persistence.EntityFramework.Sqlite.Startup),
-                typeof(Webhooks.Persistence.EntityFramework.SqlServer.Startup),
-                typeof(Webhooks.Persistence.EntityFramework.MySql.Startup),
-                typeof(Webhooks.Persistence.EntityFramework.PostgreSql.Startup),
-                typeof(Webhooks.Persistence.MongoDb.Startup),
-                typeof(Webhooks.Persistence.YesSql.SqliteStartup),
-                typeof(Webhooks.Persistence.YesSql.SqlServerStartup),
-                typeof(Webhooks.Persistence.YesSql.MySqlStartup),
-                typeof(Webhooks.Persistence.YesSql.PostgreSqlStartup),
-                typeof(WorkflowSettings.Persistence.EntityFramework.Sqlite.Startup),
-                typeof(WorkflowSettings.Persistence.EntityFramework.SqlServer.Startup),
-                typeof(WorkflowSettings.Persistence.EntityFramework.MySql.Startup),
-                typeof(WorkflowSettings.Persistence.EntityFramework.PostgreSql.Startup),
-                typeof(WorkflowSettings.Persistence.MongoDb.Startup),
-                typeof(WorkflowSettings.Persistence.YesSql.SqliteStartup),
-                typeof(WorkflowSettings.Persistence.YesSql.SqlServerStartup),
-                typeof(WorkflowSettings.Persistence.YesSql.MySqlStartup),
-                typeof(WorkflowSettings.Persistence.YesSql.PostgreSqlStartup),
                 typeof(Secrets.Persistence.EntityFramework.Sqlite.Startup),
                 typeof(Secrets.Persistence.EntityFramework.MySql.Startup),
-                typeof(Secrets.Sql.Startup),
-                typeof(Secrets.Http.Startup),
             };
 
             services
@@ -101,17 +72,7 @@ namespace Elsa.Samples.Server.Host
                     // When testing a distributed on your local machine, make sure each instance has a unique "container" name.
                     // This name is used to create unique input queues for pub/sub messaging where the competing consumer pattern is undesirable in order to deliver a message to each subscriber.
                     //.WithContainerName(Configuration.GetValue<string>("ContainerName") ?? System.Environment.MachineName)
-                )
-                .AddRetentionServices(options =>
-                {
-                    // Bind options from configuration.
-                    elsaSection.GetSection("Retention").Bind(options);
-
-                    // Configure a custom specification filter pipeline that deletes cancelled, faulted and completed workflows.
-                    options.ConfigureSpecificationFilter = filter => filter.AddAndSpecification(
-                        new WorkflowStatusFilterSpecification(WorkflowStatus.Cancelled, WorkflowStatus.Faulted, WorkflowStatus.Finished))
-                    ;
-                });
+                );
 
             // Elsa API endpoints.
             services

@@ -9,6 +9,7 @@
             Elsa is a set of workflow libraries and tools that enable lean and mean workflowing capabilities in any .NET Core application.
             This package provides activities to send and receive messages using Rabbit MQ.</Description>        
         <PackageTags>elsa, workflows</PackageTags>
+        <PackageId>SVT.Elsa.Activities.RabbitMq</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

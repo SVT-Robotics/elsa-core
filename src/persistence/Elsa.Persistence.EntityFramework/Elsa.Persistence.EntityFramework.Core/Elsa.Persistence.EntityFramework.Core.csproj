@@ -10,6 +10,7 @@
             This package provides Entity Framework Core entities used by the various Elsa persistence EF Core providers.
         </Description>
         <PackageTags>elsa, workflows, efcore</PackageTags>
+        <PackageId>SVT.Elsa.Persistence.EntityFramework.Core</PackageId>
     </PropertyGroup>
 
     <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.1'">
@@ -28,8 +29,8 @@
     </ItemGroup>
 
     <ItemGroup Condition=" '$(TargetFramework)' == 'net8.0'">
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.1" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.19" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.19" />
     </ItemGroup>
 
     <ItemGroup>

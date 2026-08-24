@@ -10,6 +10,7 @@
             This package provides Entity Framework Core migrations for the MySql database provider.
         </Description>
         <PackageTags>elsa, workflows, efcore, mysql, mariadb</PackageTags>
+        <PackageId>SVT.Elsa.Persistence.EntityFramework.MySql</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

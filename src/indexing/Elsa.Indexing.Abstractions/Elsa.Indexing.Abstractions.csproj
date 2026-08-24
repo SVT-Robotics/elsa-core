@@ -10,6 +10,7 @@
             This package provides abstractions and models that are used for the indexing of workflows
         </Description>      
         <PackageTags>elsa, workflows, indexing</PackageTags>
+        <PackageId>SVT.Elsa.Indexing.Abstractions</PackageId>
     </PropertyGroup>
 
    <ItemGroup>

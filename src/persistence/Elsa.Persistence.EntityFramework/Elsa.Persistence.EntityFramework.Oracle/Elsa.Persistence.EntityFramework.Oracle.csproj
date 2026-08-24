@@ -10,6 +10,7 @@
             This package provides Entity Framework Core migrations for the Oracle database provider.
         </Description>
         <PackageTags>elsa, workflows, efcore, oracle</PackageTags>
+        <PackageId>SVT.Elsa.Persistence.EntityFramework.Oracle</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

@@ -10,6 +10,7 @@
             This package provides the SqlServer EF Core provider for Webhook persistence.
         </Description>
         <PackageTags>elsa, workflows, webhooks, efcore, sqlserver</PackageTags>
+        <PackageId>SVT.Elsa.Webhooks.Persistence.EntityFramework.SqlServer</PackageId>
     </PropertyGroup>
 
     <ItemGroup Condition=" '$(TargetFramework)' == 'net5.0'">
@@ -46,10 +47,6 @@
     
     <ItemGroup>
         <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.6" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\Elsa.Webhooks.Persistence.EntityFramework.Core\Elsa.Webhooks.Persistence.EntityFramework.Core.csproj" />
     </ItemGroup>
 
 </Project>

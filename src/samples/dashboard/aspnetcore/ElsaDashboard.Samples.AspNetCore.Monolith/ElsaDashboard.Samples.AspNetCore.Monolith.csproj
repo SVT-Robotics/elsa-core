@@ -7,7 +7,7 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.Identity.Client" Version="4.59.0" />
-        <PackageReference Include="System.Text.Encodings.Web" Version="8.0.0" />
+        <PackageReference Include="System.Text.Encodings.Web" Version="9.0.19" />
     </ItemGroup>
 
     <ItemGroup>
@@ -18,11 +18,8 @@
         <ProjectReference Include="..\..\..\..\caching\Elsa.Caching.Rebus\Elsa.Caching.Rebus.csproj" />
         <ProjectReference Include="..\..\..\..\core\Elsa\Elsa.csproj" />
         <ProjectReference Include="..\..\..\..\designer\bindings\aspnet\Elsa.Designer.Components.Web\Elsa.Designer.Components.Web.csproj" />
-        <ProjectReference Include="..\..\..\..\modules\secrets\Elsa.Secrets.Api\Elsa.Secrets.Api.csproj" />
-        <ProjectReference Include="..\..\..\..\modules\secrets\Elsa.Secrets.Http\Elsa.Secrets.Http.csproj" />
         <ProjectReference Include="..\..\..\..\modules\secrets\Elsa.Secrets.Persistence.EntityFramework.Sqlite\Elsa.Secrets.Persistence.EntityFramework.Sqlite.csproj" />
         <ProjectReference Include="..\..\..\..\modules\secrets\Elsa.Secrets.Persistence.EntityFramework.SqlServer\Elsa.Secrets.Persistence.EntityFramework.SqlServer.csproj" />
-        <ProjectReference Include="..\..\..\..\modules\secrets\Elsa.Secrets.Sql\Elsa.Secrets.Sql.csproj" />
         <ProjectReference Include="..\..\..\..\modules\secrets\Elsa.Secrets\Elsa.Secrets.csproj" />
         <ProjectReference Include="..\..\..\..\modules\workflowtesting\Elsa.WorkflowTesting.Api\Elsa.WorkflowTesting.Api.csproj" />
         <ProjectReference Include="..\..\..\..\persistence\Elsa.Persistence.EntityFramework\Elsa.Persistence.EntityFramework.Sqlite\Elsa.Persistence.EntityFramework.Sqlite.csproj" />

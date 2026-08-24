@@ -10,6 +10,7 @@
             This package provides the PostgreSQL EF Core provider for Webhook persistence.
         </Description>
         <PackageTags>elsa, workflows, webhooks, efcore, postgresql</PackageTags>
+        <PackageId>SVT.Elsa.Webhooks.Persistence.EntityFramework.PostgreSql</PackageId>
     </PropertyGroup>
     
     <ItemGroup Condition=" '$(TargetFramework)' == 'net5.0'">
@@ -42,10 +43,6 @@
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\Elsa.Webhooks.Persistence.EntityFramework.Core\Elsa.Webhooks.Persistence.EntityFramework.Core.csproj" />
     </ItemGroup>
 
 </Project>

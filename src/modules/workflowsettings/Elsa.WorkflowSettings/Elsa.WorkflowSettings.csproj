@@ -10,6 +10,7 @@
             This package contains Workflow Settings.
         </Description>
         <PackageTags>elsa, workflow settings</PackageTags>
+        <PackageId>SVT.Elsa.WorkflowSettings</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

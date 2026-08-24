@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
@@ -12,7 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\..\indexing\Elsa.Indexing.Elasticsearch\Elsa.Indexing.Elasticsearch.csproj" />
         <ProjectReference Include="..\..\..\core\Elsa\Elsa.csproj" />
     </ItemGroup>
 

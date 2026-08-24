@@ -10,6 +10,7 @@
             This package provides a YesSql persistence provider.
         </Description>
         <PackageTags>elsa, workflow settings, orchard</PackageTags>
+        <PackageId>SVT.Elsa.WorkflowSettings.Persistence.YesSql</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

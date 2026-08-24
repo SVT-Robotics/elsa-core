@@ -10,6 +10,7 @@
             This package provides activities to send and receive messages using MQTT.
         </Description>
         <PackageTags>elsa, workflows</PackageTags>
+        <PackageId>SVT.Elsa.Activities.Mqtt</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

@@ -10,6 +10,7 @@
             This package provides indexing with Elasticsearch
         </Description>
         <PackageTags>elsa, workflows, elasticsearch</PackageTags>
+        <PackageId>SVT.Elsa.Indexing.Elasticsearch</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

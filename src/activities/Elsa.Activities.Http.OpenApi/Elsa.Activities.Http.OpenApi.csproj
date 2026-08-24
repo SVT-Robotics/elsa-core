@@ -10,6 +10,7 @@
             This package provides Swashbuckle filters that include HTTP Endpoint activities.
         </Description>
         <PackageTags>elsa, workflows, http, openapi, swagger, swashbuckle</PackageTags>
+        <PackageId>SVT.Elsa.Activities.Http.OpenApi</PackageId>
     </PropertyGroup>
     
     <PropertyGroup>

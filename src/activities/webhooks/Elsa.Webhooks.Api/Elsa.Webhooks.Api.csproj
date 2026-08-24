@@ -10,6 +10,7 @@
             This package provides Webhook API endpoints for managing webhook definitions.
         </Description>
         <PackageTags>elsa, workflows, webhooks</PackageTags>
+        <PackageId>SVT.Elsa.Webhooks.Api</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

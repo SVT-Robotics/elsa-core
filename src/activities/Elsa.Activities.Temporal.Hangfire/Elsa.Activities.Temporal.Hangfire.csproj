@@ -11,6 +11,7 @@
 
         </Description>
         <PackageTags>elsa, workflows, timers, background tasks</PackageTags>
+        <PackageId>SVT.Elsa.Activities.Temporal.Hangfire</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

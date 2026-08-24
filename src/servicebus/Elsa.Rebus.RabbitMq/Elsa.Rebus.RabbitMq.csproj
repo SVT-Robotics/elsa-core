@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <Import Project="..\..\..\common.props" />
     <Import Project="..\..\..\configureawait.props" />
@@ -10,6 +10,7 @@
             This package provides a RabbitMQ provider for the Rebus service bus API used by Elsa.
         </Description>       
         <PackageTags>elsa, workflows, rebus, service bus, rabbitmq</PackageTags>
+        <PackageId>SVT.Elsa.Rebus.RabbitMq</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

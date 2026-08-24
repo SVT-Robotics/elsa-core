@@ -13,6 +13,7 @@
             * SendMassTransitMessage
         </Description>      
         <PackageTags>elsa, workflows</PackageTags>
+        <PackageId>SVT.Elsa.Activities.MassTransit</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

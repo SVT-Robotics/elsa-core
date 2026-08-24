@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Elsa.Persistence.EntityFramework.Sqlite.Migrations
 {
@@ -8,7 +8,7 @@ namespace Elsa.Persistence.EntityFramework.Sqlite.Migrations
         {
             migrationBuilder.CreateIndex(
                 name: "IX_WorkflowInstance_DefinitionVersionId",
-                schema: "Elsa",
+                //schema: "Elsa",
                 table: "WorkflowInstances",
                 column: "DefinitionVersionId");
         }
@@ -17,7 +17,7 @@ namespace Elsa.Persistence.EntityFramework.Sqlite.Migrations
         {
             migrationBuilder.DropIndex(
                 name: "IX_WorkflowInstance_DefinitionVersionId",
-                schema: "Elsa",
+                //schema: "Elsa",
                 table: "WorkflowInstances");
         }
     }

@@ -10,6 +10,7 @@
             This package provides the YesSQL provider for Webhook persistence.
         </Description>
         <PackageTags>elsa, workflows, webhooks, yessql</PackageTags>
+        <PackageId>SVT.Elsa.Webhooks.Persistence.YesSql</PackageId>
     </PropertyGroup>
 
     <ItemGroup>
@@ -20,7 +21,6 @@
 
     <ItemGroup>
         <ProjectReference Include="..\..\..\persistence\Elsa.Persistence.YesSql\Elsa.Persistence.YesSql.csproj" />
-        <ProjectReference Include="..\Elsa.Activities.Webhooks\Elsa.Activities.Webhooks.csproj" />
         <ProjectReference Include="..\Elsa.Webhooks.Abstractions\Elsa.Webhooks.Abstractions.csproj" />
     </ItemGroup>
 
