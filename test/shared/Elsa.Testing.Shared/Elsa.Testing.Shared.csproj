@@ -9,6 +9,7 @@
             This package provides test helpers.
         </Description>
         <PackageTags>elsa, workflows</PackageTags>
+        <PackageId>SVT.Elsa.Testing.Shared</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

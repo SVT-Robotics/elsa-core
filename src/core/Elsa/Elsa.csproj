@@ -9,7 +9,7 @@
             This package references some of the most commonly used packages you are likely to use when working with Elsa.
         </Description>      
         <PackageTags>elsa, workflows</PackageTags>
-        <PackageId>SVT.Elsa</PackageId>      
+        <PackageId>SVT.Elsa</PackageId>
         <TargetFramework>netstandard2.1</TargetFramework>
     </PropertyGroup>
 
