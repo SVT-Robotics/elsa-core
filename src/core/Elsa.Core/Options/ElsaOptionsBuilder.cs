@@ -27,7 +27,7 @@ namespace Elsa.Options
             AddAutoMapper = () =>
             {
                 // The profiles are added to AddWorkflowsCore so that they are not forgotten in case the AddAutoMapper function(option) is overridden.
-                services.AddAutoMapper(Enumerable.Empty<Assembly>(), ServiceLifetime.Singleton);
+                services.AddAutoMapper(cfg => { });
             };
 
             services.AddSingleton<InMemNetwork>();
